@@ -614,6 +614,50 @@ video {
   margin-top: 8rem;
 }
 
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[40rem\] {
+  margin-left: 40rem;
+}
+
+.ml-\[80rem\] {
+  margin-left: 80rem;
+}
+
+.ml-\[82rem\] {
+  margin-left: 82rem;
+}
+
+.ml-\[rem\] {
+  margin-left: rem;
+}
+
+.ml-\[180rem\] {
+  margin-left: 180rem;
+}
+
+.ml-\[d\] {
+  margin-left: d;
+}
+
+.ml-\[70rem\] {
+  margin-left: 70rem;
+}
+
+.ml-\[78rem\] {
+  margin-left: 78rem;
+}
+
 .flex {
   display: flex;
 }
@@ -644,6 +688,34 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[42\%\] {
+  width: 42%;
+}
+
+.w-\[43\%\] {
+  width: 43%;
+}
+
+.w-\[43\.5\%\] {
+  width: 43.5%;
 }
 
 .cursor-pointer {
@@ -678,12 +750,53 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
+}
+
+.border-\[\#C19570\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(193 149 112 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[3\] {
+  border-color: 3;
 }
 
 .bg-white {
@@ -711,6 +824,56 @@ video {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-\[20\%\] {
@@ -752,6 +915,19 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[colour-btns\] {
+  color: colour-btns;
+}
+
+.text-\[\#C19570\] {
+  --tw-text-opacity: 1;
+  color: rgb(193 149 112 / var(--tw-text-opacity));
 }
 
 .outline-none {

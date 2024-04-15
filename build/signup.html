@@ -12,21 +12,30 @@
 <body class="bg-colour font-main mt-14">
     <header class="grid items-center w-[100%] p-[4rem] grid-cols-2">
         <div class="ml-auto text-8xl">
-            <h1 class="font-titles mb-4">We Are Happy To See You Once Again</h1>
-            <p class="font-secondary-cl mt-[6rem] text-[2.75rem]">Feel free to enter your information anytime and log back into our website!</p>
+            <h1 class="font-titles mb-4">We Are Delighted To Have You Joining Us</h1>
+            <p class="font-secondary-cl mt-[6rem] text-[2.75rem]">Your path towards a better future starts today, let's create an account first</p>
         </div>
         <div class="text-center grid ml-[8rem] mt-16 text-3xl">
+
         <form action="" method="post" class="grid grid-cols-1 gap-2">
+            <label for="Name" class="text-left font-titles">Tell us your name</label>
+            <div class="flex gap-3">
+            <input class="p-6 w-[43.5%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="name" name="name"  required placeholder="Name">
+            
+            <label for="Lastname" class="text-left font-titles"></label>
+            <input class="p-6 w-[43.5%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="lastname" name="lastname"  required placeholder="Lastname">
+        </div>
+
             <label for="Email" class="text-left font-titles">Your email</label>
             <input class="p-6 w-[90%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="email" name="email"  required placeholder="example@gmail.com">
 
             <label for="password" class="text-left font-titles">Enter your password</label>
-            <input  class="p-6 w-[90%] rounded-md mb-8 text-3xl outline-none text-[#01244A]"  type="password" id="password" name="password" required placeholder="Remember to keep your password secret">
+            <input  class="p-6 w-[90%] rounded-md mb-8 text-3xl outline-none text-[#01244A]"  type="password" id="password" name="password" required placeholder="Remember to create a safe password">
 
-            <button class="text-white w-[90%] text3xl colour-btns rounded-lg px-16 py-7 cursor-pointer" type="submit">Log in</button>
+            <button class="text-white w-[90%] text3xl colour-btns rounded-lg px-16 py-7 cursor-pointer" type="submit">Create account</button>
             
-            <a class="font-titles w-[90%] mt-8" href="">Don't have an account? Sign up</a>
-            <a class="font-titles w-[90%] mt-4" href="">Forgot your password?</a>
+            <a class="font-titles w-[90%] mt-8" href="">Already have an account? Log in</a>
+
         </form>
     </div>
     </header>
