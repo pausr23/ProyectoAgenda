@@ -3,155 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
+    <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-colour font-main">
-    <div class="flex items-center p-5 bg-white">
-        <a href="./index.html"><img class="cursor-pointer w-10" src="./imgs/calendar.png" alt="Logo"></a>
-        <nav>
-            <ul class="grid grid-flow-col content-center gap-12 ml-8 text-xl">
-                <li><a href="">Home </a> </li>
-                <li><a href="">Admin </a> </li>
-                <li><a href="">About us </a> </li>
-                <div class="gap-4 flex ml-[100rem]">
-                <li><a class="text-white colour-btns rounded-lg  border-[#C19570] border-[3px] px-16 py-2 cursor-pointer" href="./signup.html">Log out</a></li>
+<body class="bg-color">
+    
+    <div class="w-full grid pl-14">
+        <div class="grid-cols-[10%,35%,46%] grid py-10 items-center gap-16">
+            <a class=" w-44" href="./index.html"><img class="cursor-pointer" src="./imgs/logo.png" alt="logo"></a>
+            <form class="flex rounded-3xl bg-white drop-shadow-xl  h-12">
+                <input class="rounded-3xl pl-7 w-[90%]" type="text" placeholder="Search Task">
+                <button><img class="w-7" src="./imgs/search.png" alt="#"></button>
+            </form>
+            <div class="w-40 grid-cols-2 grid justify-self-end ">
+                <button><img class="w-7" src="./imgs/chat.png" alt="#"></button>
+                <button><img class="w-7" src="./imgs/notification.png" alt="#"></button>
+            </div>
+        </div>
+
+        <div class="grid-cols-[10%,86%] grid gap-16"> 
+            <div class="grid justify-center">
+                <img class="w-32 pb-3" src="./imgs/pp.png" alt="profile">
+                <p class="font-side text-base m-auto">Michael</p>
+                <ul class="font-side text-2xl"> 
+                    <li class="py-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Activities</button></li>
+                    <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Dashboard</button></li>
+                    <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Contact</button></li>
+                    <li class="pb-28"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">About Us</button></li>
+                    <li><a class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300" href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+            <div class=" bg-white rounded-2xl">
+                <div>
+                    <div class="grid grid-cols-5 mt-16">
+                        <button class="bg-sky-100 rounded-lg drop-shadow-lg w-28 h-10 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500 grid grid-cols-2 mx-auto">
+                            <img class="w-10 mx-auto" src="imgs/career.png" alt="">
+                            <h3 class="text-xs font-bold mt-2">Career</h3>
+                        </button>
+                        <button class="bg-sky-100 rounded-lg drop-shadow-lg w-28 h-10 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500 grid grid-cols-2 mx-auto">
+                            <img class="w-10 mx-auto" src="imgs/course.png" alt="">
+                            <h3 class="text-xs font-bold mt-2">Course</h3>
+                        </button>
+                        <button class="bg-sky-100 rounded-lg drop-shadow-lg w-28 h-10 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500 grid grid-cols-2 mx-auto">
+                            <img class="w-8 mx-auto" src="imgs/university.png" alt="">
+                            <h3 class="text-xs font-bold mt-2">University</h3>
+                        </button>
+                        <button class="bg-sky-100 rounded-lg drop-shadow-lg w-28 h-10 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500 grid grid-cols-2 mx-auto">
+                            <img class="w-10 mx-auto" src="imgs/students.png" alt="">
+                            <h3 class="text-xs font-bold mt-2">Students</h3>
+                        </button>
+                        <button class="bg-sky-100 rounded-lg drop-shadow-lg w-28 h-10 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500 grid grid-cols-2 mx-auto">
+                            <img class="w-8 mx-auto" src="imgs/all.png" alt="">
+                            <h3 class="text-xs font-bold mt-2">All</h3>
+                        </button>
+                    </div>
                 </div>
-            </ul>
-        </nav>
+                <div>
+                    <select class="border p-1 rounded bg-sky-100 mt-14 mb-14 ml-16">
+                      <option value="opcion1">All</option>
+                      <option value="opcion2">Task</option>
+                      <option value="opcion3">Announcements</option>
+                      <option value="opcion1">Event</option>
+                    </select>
+                  </div>
+                  
+                <div class="grid-cols-4 grid gap-9">
+                    <div class="bg-white w-56 shadow-2xl rounded-3xl mx-auto">
+                        <img class="rounded-t-3xl rounded-tr-3xl" src="imgs/expo.jpg" alt="">
+                        <h2 class="text-sm font-bold">ExpoMedia</h2>
+                        <div class="grid grid-cols-2 text-xs">
+                            <div>
+                                <h3 class="mb-2">August 23, 9:00 am</h3>
+                                <p class="mb-2">Informatics and Multimedia innovating exposition</p>
+                            </div>
+                            <div>
+                                <h2 class="mb-2">Career</h2>
+                                <h2 class="mb-2">Event</h2>
+                                <h2 class="mb-2">Active</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white w-56 shadow-2xl rounded-3xl mx-auto">
+                        <img  class="rounded-t-3xl rounded-tr-3xl" src="imgs/expo.jpg" alt="">
+                        <h2 class="text-sm font-bold">ExpoMedia</h2>
+                        <div class="grid grid-cols-2 text-xs">
+                            <div>
+                                <h3 class="mb-2">August 23, 9:00 am</h3>
+                                <p class="mb-2">Informatics and Multimedia innovating exposition</p>
+                            </div>
+                            <div>
+                                <h2 class="mb-2">Career</h2>
+                                <h2 class="mb-2">Event</h2>
+                                <h2 class="mb-2">Active</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white w-56 shadow-2xl rounded-3xl mx-auto">
+                        <img class="rounded-t-3xl rounded-tr-3xl" src="imgs/expo.jpg" alt="">
+                        <h2 class="text-sm font-bold">ExpoMedia</h2>
+                        <div class="grid grid-cols-2 text-xs">
+                            <div>
+                                <h3 class="mb-2">August 23, 9:00 am</h3>
+                                <p class="mb-2">Informatics and Multimedia innovating exposition</p>
+                            </div>
+                            <div>
+                                <h2 class="mb-2">Career</h2>
+                                <h2 class="mb-2">Event</h2>
+                                <h2 class="mb-2">Active</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white w-56 shadow-2xl rounded-3xl mx-auto">
+                        <img class="rounded-t-3xl rounded-tr-3xl" src="imgs/expo.jpg" alt="">
+                        <h2 class="text-sm font-bold">ExpoMedia</h2>
+                        <div class="grid grid-cols-2 text-xs">
+                            <div>
+                                <h3 class="mb-2">August 23, 9:00 am</h3>
+                                <p class="mb-2">Informatics and Multimedia innovating exposition</p>
+                            </div>
+                            <div>
+                                <h2 class="mb-2">Career</h2>
+                                <h2 class="mb-2">Event</h2>
+                                <h2 class="mb-2">Active</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
     </div>
-    <header>
-        <div class="grid grid-cols-4 pt-14 pb-24 pt-24">
-            <h1 class="text-6xl">Welcome, Michael</h1>
-            <input class="p-2 w-[80%] rounded-xl text-2xl text-[#01244A] drop-shadow-md" type="text" id="email" name="email"  required placeholder="Search Events">
-            <button class="bg-[#C19570] rounded-lg drop-shadow-lg w-20 h-16">
-                <img class="w-10 mx-auto" src="imgs/search.png" alt="">
-            </button>
-            <button>
-                <img class="w-10" src="imgs/campana.png" alt="">
-            </button>
-        </div>
-        <div>
-            <h2 class="text-3xl pb-8">Categories</h2>
-            <div class="grid grid-cols-5">
-                <button class="bg-white rounded-lg drop-shadow-lg w-48 h-48 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500">
-                    <img class="w-32 mx-auto pb-2" src="imgs/career.png" alt="">
-                    <h3 class="text-lg">Career</h3>
-                </button>
-                <button class="bg-white rounded-lg drop-shadow-lg w-48 h-48 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500">
-                    <img class="w-32 mx-auto pb-2" src="imgs/course.png" alt="">
-                    <h3 class="text-lg">Course</h3>
-                </button>
-                <button class="bg-white rounded-lg drop-shadow-lg w-48 h-48 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500">
-                    <img class="w-32 mx-auto pb-2" src="imgs/university.png" alt="">
-                    <h3 class="text-lg">University</h3>
-                </button>
-                <button class="bg-white rounded-lg drop-shadow-lg w-48 h-48 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500">
-                    <img class="w-32 mx-auto pb-2" src="imgs/students.png" alt="">
-                    <h3 class="text-lg">Students</h3>
-                </button>
-                <button class="bg-white rounded-lg drop-shadow-lg w-48 h-48 hover:bg-orange-500 active:bg-orange-700 focus:bg-orange-500">
-                    <img class="w-32 mx-auto pb-2" src="imgs/all.png" alt="">
-                    <h3 class="text-lg">All</h3>
-                </button>
-            </div>
-        </div>
-        <h2 class="text-3xl pb-8 pt-20">Search by Tag</h2>
-        <div class="grid-cols-3 grid gap-9">
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white">
-                <img src="imgs/expo.jpg" alt="">
-                <h2 class="text-3xl">ExpoMedia</h2>
-                <div class="grid grid-cols-2 text-xl">
-                    <div>
-                        <h3>August 23, 9:00 am</h3>
-                        <p>Informatics and Multimedia innovating exposition</p>
-                    </div>
-                    <div>
-                        <h2>Career</h2>
-                        <h2>Event</h2>
-                        <h2>Active</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
 </body>
 </html>

@@ -9,31 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-colour font-main">
-    <div class="flex items-center p-5 bg-white">
-        <a href="./index.html"><img class="cursor-pointer w-10" src="./imgs/calendar.png" alt="Logo"></a>
-        <nav>
-            <ul class="grid grid-flow-col content-center gap-12 ml-8 text-xl">
+<body class="font-main relative">
+    <img class="absolute top-0 left-0 z-0 w-1/2" src="imgs/mancha1.png" alt="">
+    <div class="flex p-5 justify-between relative z-10">
+        <a href="./index.html"><img class="cursor-pointer w-[7rem]" src="./imgs/logo.png" alt="Logo"></a>
+        <nav class="flex items-center">
+            <ul class="grid grid-flow-col content-center gap-12 ml-8 text-sm text-blue-800">
                 <li><a href="">Home </a> </li>
                 <li><a href="">Contact </a> </li>
                 <li><a href="">About us </a> </li>
-                <div class="gap-4 flex ml-[100rem]">
-                <li><a class="text-[#C19570] bg-white rounded-lg border-[#C19570] border-[3px] px-6 py-2 cursor-pointer" href="./login.html">Log In</a></li>
-                <li><a class="text-white colour-btns rounded-lg  border-[#C19570] border-[3px] px-6 py-2 cursor-pointer" href="./signup.html">Sign Up</a></li>
-                </div>
             </ul>
         </nav>
     </div>
-    <header class="grid items-center w-[100%] p-[4rem] grid-cols-2">
-        <div class="ml-auto text-8xl">
-            <h1 class="font-titles mb-4">Your personalized university guide, <br>
-            always up-to-date</h1>
-            <form class="flex items-center w-[200%]">
-                <input class="p-6 mt-[8rem] w-[40%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" placeholder="Receive news or get support via email">
-                <input class="text-white text-xl colour-btns rounded-lg px-16 py-7 mt-24 ml-4 cursor-pointer" type="submit" value="Send Email">
-            </form>
+    <header class="grid items-center w-[100%] p-[2rem] grid-cols-2 relative z-10">
+        <div>
+            <h1 class="mb-4 text-6xl mr-40 text-white">CALENDARLY</h1>
+            <h2 class="text-lg text-white pt-5">Your personalized university guide, <br>
+                always up-to-date</h2>
+            <div class="pl-32 pt-36 space-x-4">
+                <button class="bg-white border border-orange-600 rounded-3xl border-4 px-4 py-1 shadow-xl">
+                    <h1 class="text-orange-600">Log in</h1>
+                </button>
+                <button class="bg-orange-600 border border-orange-600 rounded-3xl border-4 px-4 py-1 shadow-xl">
+                    <h1 class="text-white">Sign up</h1>
+                </button>
+            </div>
         </div>
-        <img class="pl-[20%] ml-16 mt-[20%] w-[90%] h-[90%]" src="./imgs/homepage.png" alt="Homepage">
+        <div class="align-bottom">
+            <img class="pt-16" src="./imgs/homepage_woman.png" alt="Homepage">
+        </div>
+        
     </header>
 </body>
 </html>
