@@ -10,50 +10,31 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-colour font-main">
-    <div class="flex items-center p-5 bg-white">
-        <a href="./index.html"><img class="cursor-pointer w-10" src="./imgs/calendar.png" alt="Logo"></a>
-        <nav>
-            <ul class="grid grid-flow-col content-center gap-12 ml-8 text-xl">
-                <li><a href="">Home </a> </li>
-                <li><a href="">Contact </a> </li>
-                <li><a href="">About us </a> </li>
-                <div class="gap-4 flex ml-[100rem]">
-                <li><a class="text-[#C19570] bg-white rounded-lg border-[#C19570] border-[3px] px-6 py-2 cursor-pointer" href="./login.html">Log In</a></li>
-                <li><a class="text-white colour-btns rounded-lg  border-[#C19570] border-[3px] px-6 py-2 cursor-pointer" href="./signup.html">Sign Up</a></li>
-                </div>
-            </ul>
-        </nav>
-    </div>
-    <header class="grid items-center w-[100%] p-[4rem] grid-cols-2 pt-48">
-        <div class="ml-auto text-8xl relative">
-            <h1 class="font-titles mb-4 z-10 relative">We Are Happy To See You Once Again</h1>
-            <p class="font-secondary-cl mt-[6rem] text-[2.75rem] z-10 relative">Feel free to enter your information anytime and log back into our website!</p>
-        </div>
-        <img class="absolute top-1/3 left-0 z-0" src="imgs/circle.png" alt="">
-
-        <div class="text-center grid ml-[8rem] mt-16 text-3xl">
+    <header class="grid items-center w-[100%] p-[4rem] grid-cols-2">
+        <div class="text-center grid ml-[8rem] text-3xl">
+        <img class="w-[35%] mx-auto ml-[15rem] mt-[6rem]" src="imgs/logo.png" alt="Logo">
+        <p class="font-semibold mb-6 mt-[3rem]">Create your account</p>
 
         <form action="" method="post" class="grid grid-cols-1 gap-2">
-            <label for="Name" class="text-left font-titles">Tell us your name</label>
-            <div class="flex gap-3">
-            <input class="p-6 w-[43.5%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="name" name="name"  required placeholder="Name">
+
+            <input class="p-1 w-[80%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="name" name="name"  required placeholder="Name">
+
+            <input class="p-1 w-[80%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email"  required placeholder="Email">
+
+            <input  class="p-1 w-[80%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto"  type="password" id="password" name="password" required placeholder="Password">
+
+            <button class="text-white bg-[#E97258] w-[80%] text3xl rounded-3xl px-4 py-4 cursor-pointer mt-4 mx-auto" type="submit">Sign Up</button>
             
-            <label for="Lastname" class="text-left font-titles"></label>
-            <input class="p-6 w-[43.5%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="lastname" name="lastname"  required placeholder="Lastname">
-        </div>
-
-            <label for="Email" class="text-left font-titles">Your email</label>
-            <input class="p-6 w-[90%] rounded-md mb-8 text-3xl outline-none text-[#01244A]" type="text" id="email" name="email"  required placeholder="example@gmail.com">
-
-            <label for="password" class="text-left font-titles">Enter your password</label>
-            <input  class="p-6 w-[90%] rounded-md mb-8 text-3xl outline-none text-[#01244A]"  type="password" id="password" name="password" required placeholder="Remember to create a safe password">
-
-            <button class="text-white w-[90%] text3xl colour-btns rounded-lg px-16 py-7 cursor-pointer" type="submit">Create account</button>
-            
-            <a class="font-titles w-[90%] mt-8" href="">Already have an account? Log in</a>
+            <p class="text-2xl text-[#928F8F] font-semibold mt-10">Already have an account? <a class="text-2xl text-[#7193E3] font-semibold" href="login.html">Log in</a></p>
 
         </form>
     </div>
+
+    <div class="ml-auto text-5xl mr-24 mt-20">
+        <h1 class="font-titles mb-4 text-center">We Are Delighted To Have <br> You Joining Us</h1>
+        <p class="font-secondary-cl mt-24 text-3xl text-center">Your path towards a better future starts today, <br> let's create an account first</p>
+    </div>
+    <img class="absolute right-0 top-0 h-full z-0 pointer-events-none" src="imgs/mancha2.png" alt="Design image">
     </header>
 </body>
 </html>
