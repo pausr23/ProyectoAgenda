@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-color">
     
     <div class="w-full grid pl-14">
-        <div class="grid-cols-[10%,35%,46%] grid py-10 items-center gap-16">
+        <div class="grid-cols-[10%,85%] grid py-10 items-center gap-16">
             <a class=" w-44" href="./index.html"><img class="cursor-pointer" src="./imgs/logo.png" alt="logo"></a>
-            <form class="flex rounded-3xl bg-white drop-shadow-xl  h-12">
-                <input class="rounded-3xl pl-7 w-[90%]" type="text" placeholder="Search Task">
-                <button><img class="w-7" src="./imgs/search.png" alt="#"></button>
-            </form>
             <div class="w-40 grid-cols-2 grid justify-self-end ">
                 <button><img class="w-7" src="./imgs/chat.png" alt="#"></button>
                 <button><img class="w-7" src="./imgs/notification.png" alt="#"></button>
@@ -25,10 +24,12 @@
         </div>
 
         <div class="grid-cols-[10%,86%] grid gap-16"> 
+
+     <!--Side nav-->
             <div class="grid justify-center">
                 <img class="w-32 pb-3" src="./imgs/pp.png" alt="profile">
                 <p class="font-side text-base m-auto">Michael</p>
-                <ul class="font-side text-2xl"> 
+                <ul class="font-side text-xl"> 
                     <li class="py-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Activities</button></li>
                     <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Dashboard</button></li>
                     <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Contact</button></li>
@@ -36,13 +37,110 @@
                     <li><a class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300" href="index.html">Log Out</a></li>
                 </ul>
             </div>
-            <div class=" bg-white rounded-2xl">
+
+    <!--main container de tareas--> 
+
+            <div class=" bg-white rounded-2xl grid grid-cols-[30%,20%,30%,20%] text-white gap-x-10 gap-y-8 pl-8 py-6">
+
+    <!--pending tasks--> 
+
+                <section class="bg-indigo-400 grid grid-cols-[30%,70%] col-span-2 pl-6 rounded-2xl h-80 ">
+                    <h1 class="text-3xl font-semibold mt-10 leading-normal h-6">Welcome, Michael! <span class="text-lg"> <br>you have 4 pending <br>tasks to do.</span></h1>
+                    
+                    <div class="swiper mySwiper" id="tasks-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                <h2 class="text-xl pb-10">Web Design</h2>
+                                <p>Draft and moodboard of the final project</p>
+                                <p class="text-red-600 text-xl font-bold my-6">Today</p>
+                            </div>
+                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                <h2 class="text-xl pb-10">Web Design</h2>
+                                <p>Draft and moodboard of the final project</p>
+                                <p class="text-yellow-300 text-xl font-bold my-6">In 2 Days</p>
+                            </div>
+                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                <h2 class="text-xl pb-10">Web Design</h2>
+                                <p>Draft and moodboard of the final project</p>
+                                <p class="text-lime-500 text-xl font-bold my-6">In 4 Days</p>
+                            </div>
+                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                <h2 class="text-xl pb-10">Web Design</h2>
+                                <p>Draft and moodboard of the final project</p>
+                                <p class="text-lime-500 text-xl font-bold my-6">In 5 days</p>
+                            </div>
+                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                <h2 class="text-xl pb-10">Web Design</h2>
+                                <p>Draft and moodboard of the final project</p>
+                                <p class="text-lime-500 text-xl font-bold my-6">In 6 days</p>
+                            </div>
+                          
+                        </div>
+                        
+                      </div>
+                    
+                      <!-- Swiper JS -->
+                      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                      <script src="app.js"></script>
+
+                </section>
+
+    <!--calendario-->
+    
+                <section>
+
+                </section>
+
+    <!--tasks summary-->
+
+                <section class="col-span-2 h-72">
+
+                    <div class="grid-cols-2 grid text-gray-950">
+                        <div>
+                        <h2 class="text-3xl font-bold pb-5">You have completed 5 tasks this week!</h2>
+                        <div>
+                            <div>
+                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>
+
+                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>
+
+                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>
+
+                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>  
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+
+    <!--courses progress-->
+
+                <section>
+
+                </section>
 
             </div>
         </div> 
-
-
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+   
 </body>
 </html>
