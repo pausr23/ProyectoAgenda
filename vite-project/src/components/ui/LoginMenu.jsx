@@ -6,7 +6,9 @@ export function LoginMenu(){
     return(
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
             <div className="text-center grid ml-[-3rem] text-3xl">
-                <img className="w-[35%] mx-auto ml-[19.5rem] mt-[10rem]" src="./src/assets/imgs/Logo.png" alt="Logo"/>
+            <Link to="/">
+                    <img className="w-[35%] mx-auto ml-[19.5rem] mt-[10rem]" src="./src/assets/imgs/Logo.png" alt="Logo"/>
+                </Link>
                 <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Log in to your account</p>
                 
                 <form action="" method="post" className="grid grid-cols-1 gap-2"> 
