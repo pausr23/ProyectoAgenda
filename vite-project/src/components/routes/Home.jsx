@@ -5,7 +5,7 @@ import { HomepageBtns } from "../ui/HomepageBtns.jsx";
 export function Home() {
     return (
     <>
-    <img className="absolute top-0 left-0 w-1/2" src="./src/assets/imgs/square.png" alt="square" />
+    <img className="absolute top-0 left-0 lg:w-1/2 md:w-full w-full h-full object-cover" src="./src/assets/imgs/square.png" alt="square" />
     <Navbar />
     <Header />
     <HomepageBtns />
