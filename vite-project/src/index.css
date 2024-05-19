@@ -21,6 +21,13 @@
     color: #272727;
 }
 
+.font-titles-secondary{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
 .font-secondary-cl{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
