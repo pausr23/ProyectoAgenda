@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+
 import "../../index.css";
 
-export function ProfilePage(){
+export function QuestionsPage(){
 
     return(
         <div className="flex justify-center items-center h-[100vh] pl-16">
@@ -23,33 +23,28 @@ export function ProfilePage(){
 
         <div className="grid grid-cols-2 mt-14 text-left">
         <p className="text-xl mt-2 text-gray-500">Height</p>
-        <p className="text-3xl font-semibol">164cm</p>
+        <input className=" p-1 w-[100%] border-b border-[#928F8F]  font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="height" name="height" required placeholder="Height"/>
         </div>
 
         <div className="grid grid-cols-2 mt-14 text-left">
         <p className="text-xl mt-2 text-gray-500">Weight</p>
-        <p className="text-3xl font-semibol">60kg</p>
+        <input className=" p-1 w-[100%] border-b border-[#928F8F]  font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="weight" name="weight" required placeholder="Weight"/>
         </div>
 
         <div className="grid grid-cols-2 mt-14 text-left">
         <p className="text-xl mt-2 text-gray-500">Sleeps</p>
-        <p className="text-3xl font-semibol">6hr per day</p>
+        <input className=" p-1 w-[100%] border-b border-[#928F8F] font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="hours" name="ehours" required placeholder="Hours"/>
         </div>
 
         <div className="grid grid-cols-2 mt-14 text-left">
         <p className="text-xl mt-2 text-gray-500">Health conditions</p>
-        <p className="text-3xl font-semibol">Alergic to water</p>
+        <input className=" p-1 w-[100%] border-b border-[#928F8F]  font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="condition" name="condition" required placeholder="Condition"/>
         </div>
 
        <div className="text-left">
-       <button className="border border-red-400 text-red-400 rounded-3xl px-6 py-2 hover:bg-red-400 hover:text-white transition duration-500 ease mt-14 m-0">
-			<p>Delete account</p>
+       <button className="border border-[#7193E3] text-[#7193E3] rounded-3xl px-6 py-2 hover:bg-[#7193E3] hover:text-white transition duration-500 ease mt-14 m-0">
+			<p>Submit</p>
 		</button>
-        <Link to="/questions">
-        <button className=" ml-6 border border-[#7193E3] text-[#7193E3] rounded-3xl px-6 py-2 hover:bg-[#7193E3] hover:text-white transition duration-500 ease mt-14 m-0">
-			<p>Edit account</p>
-		</button>
-        </Link>
        </div>
 
     </div>

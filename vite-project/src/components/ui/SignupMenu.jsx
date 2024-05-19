@@ -17,9 +17,10 @@ export function SignupMenu(){
 
                 <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
 
-
+                <Link to="/questions">
                 <button className="text-white bg-[#E97258] w-[55%] text3xl rounded-3xl px-4 py-4 cursor-pointer mt-4 mx-auto" type="submit">Sign up</button>
-                
+                </Link>
+
                 <p className="text-2xl text-[#928F8F] font-semibold mt-10">Already have an account? 
                     <Link to="/login" className="text-2xl text-[#7193E3] font-semibold ml-2">Log in</Link>
                 </p>
