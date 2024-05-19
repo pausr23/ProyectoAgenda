@@ -13,131 +13,269 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-color">
-    
-    <div class="w-full grid pl-14">
-        <div class="grid-cols-[10%,85%] grid py-10 items-center gap-16">
-            <a class=" w-44" href="./index.html"><img class="cursor-pointer" src="../vite-project/src/assets/imgs/logo.png" alt="logo"></a>
-            <div class="w-40 grid-cols-2 grid justify-self-end ">
-                <button><img class="w-7" src="../vite-project/src/assets/imgs/chat.png" alt="#"></button>
-                <button><img class="w-7" src="../vite-project/src/assets/imgs/notification.png" alt="#"></button>
+
+    <div class="xl:grid-cols-[10%,85%] mx-auto grid md:gap-10">
+        <div>
+            <div class="fixed hidden xl:block bg-indigo-400 text-white font-semibold h-screen">
+                <img class="w-32 pb-3 pt-24 mx-auto" src="./images/pp.png" alt="profile">
+                <p class="text-base m-auto text-center">Michael</p>
+                <ul class="text-xl px-10 py-16 2xl:py-20"> 
+                    <li class="pb-12 2xl:pb-20"><a>Activities</a></li>
+                    <li class="pb-12 2xl:pb-20"><a>Dashboard</a></li>
+                    <li class="pb-12 2xl:pb-20"><a>Contact</a></li>
+                    <li class="pb-20 2xl:pb-20"><a>About Us</a></li>
+                    <li class="pb-5 2xl:pb-7"><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="relative z-50">
+                <input class="hidden mobile-cb" type="checkbox" id="mobile-checkbox">
+                <label class="fixed py-14 left-8 z-40 h-8 cursor-pointer xl:hidden flex items-center justify-center" for="mobile-checkbox">
+                    <img class="mx-auto w-28" src="./images/logo2.png" alt="logo">
+                </label>
+            
+                <div class="relative xl:hidden top-0 left-0 w-full md:w-1/2 align-center z-50 transition-transform duration-350 nav-list"
+                    :class="{ 'translate-x-full md:translate-x-0': !mobileCheckboxChecked, 'translate-x-0': mobileCheckboxChecked }">
+                    <div class="bg-indigo-400 h-screen content-center grid fixed">
+                        <img class="pt-10 w-24 mx-auto" src="./images/pp.png" alt="profile">
+                        <p class="text-base text-white text-center pb-6 font-semibold">Michael</p>
+                        <ul class="text-white font-semibold text-lg px-10 py-10  mx-auto">
+                            <li class="pb-12 md:pb-16 "><a>Activities</a></li>
+                            <li class="pb-12 md:pb-16"><a>Dashboard</a></li>
+                            <li class="pb-12 md:pb-16"><a>Contact</a></li>
+                            <li class="pb-20 md:pb-24"><a>About Us</a></li>
+                            <li><a href="index.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="grid-cols-[10%,86%] grid gap-16"> 
+        <div class="xl:grid-cols-2 xl:min-w-fit min-w-full">
 
-     <!--Side nav-->
-            <div class="grid justify-center">
-                <img class="w-32 pb-3" src="../vite-project/src/assets/imgs/pp.png" alt="profile">
-                <p class="font-side text-base m-auto">Michael</p>
-                <ul class="font-side text-xl"> 
-                    <li class="py-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Activities</button></li>
-                    <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Dashboard</button></li>
-                    <li class="pb-16"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">Contact</button></li>
-                    <li class="pb-28"><button class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300">About Us</button></li>
-                    <li><a class="rounded-3xl hover:bg-indigo-300 active:bg-indigo-500 focus:bg-indigo-300" href="index.html">Log Out</a></li>
-                </ul>
+            <div class="relative z-30">
+                <div class="xl:hidden bg-color fixed top-0 right-0 py-10 w-full h-16 z-30">
+                    
+                    <button class="float-right pr-10"><img src="https://img.icons8.com/ios-glyphs/30/228BE6/chat.png" alt="#"></button>
+                    <button class="float-right pr-9"><img src="https://img.icons8.com/material-rounded/30/228BE6/appointment-reminders.png" alt="#"></button>
+                </div>
             </div>
 
-    <!--main container de tareas--> 
+            <div class="py-10 flex gap-10 justify-end">
+                <button ><img class="hidden xl:block" src="https://img.icons8.com/ios-glyphs/30/228BE6/chat.png" alt="#"></button>
+                <button class="mr-9"><img class="hidden xl:block" src="https://img.icons8.com/material-rounded/30/228BE6/appointment-reminders.png" alt="#"></button>
+            </div>
 
-            <div class=" bg-white rounded-2xl grid grid-cols-[30%,20%,30%,20%] text-white gap-x-10 gap-y-8 pl-8 py-6">
+                <div class="z-10 mx-auto min-w-full bg-white xl:rounded-2xl grid-cols-1 grid xl:grid-cols-[30%,20%,30%,20%] text-white 2xl:gap-x-24 xl:gap-x-16 gap-y-8 xl:pl-8 pt-12">
 
-    <!--pending tasks--> 
+                    <!--pending tasks--> 
+                
+                    <section class="mx-auto w-[74%] md:w-[80%] xl:min-w-full bg-indigo-400 grid grid-cols-[50%,50%] md:grid-cols-[30%,70%] col-span-2 rounded-2xl pb-10">
+                        <h1 class="ml-6 text-2xl md:text-3xl font-semibold mt-10 leading-normal pr-4">Welcome, Michael! <span class="md:text-lg text-base"> <br>you have 4 pending <br>tasks to do.</span></h1>          
+                        <div class=" swiper mySwiper" id="tasks-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                    <h2 class="md:text-xl text-lg pb-6 2xl:pb-9">Web Design</h2>
+                                    <p class="xl:text-sm 2xl:text-base">Draft and moodboard of the final project</p>
+                                    <p class="text-red-600 text-xl font-bold xl:my-2 2xl:my-6 my-6">Today</p>
+                                </div>
 
-                <section class="bg-indigo-400 grid grid-cols-[30%,70%] col-span-2 pl-6 rounded-2xl h-80 ">
-                    <h1 class="text-3xl font-semibold mt-10 leading-normal h-6">Welcome, Michael! <span class="text-lg"> <br>you have 4 pending <br>tasks to do.</span></h1>
-                    
-                    <div class="swiper mySwiper" id="tasks-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
-                                <h2 class="text-xl pb-10">Web Design</h2>
-                                <p>Draft and moodboard of the final project</p>
-                                <p class="text-red-600 text-xl font-bold my-6">Today</p>
+                                <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                    <h2 class="md:text-xl text-lg pb-6 2xl:pb-9">Web Design</h2>
+                                    <p class="xl:text-sm 2xl:text-base">Draft and moodboard of the final project</p>
+                                    <p class="text-yellow-300 text-xl font-bold xl:my-2 2xl:my-6 my-6">In 2 Days</p>
+                                </div>
+
+                                <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                    <h2 class="md:text-xl text-lg pb-6 2xl:pb-9">Web Design</h2>
+                                    <p class="xl:text-sm 2xl:text-base">Draft and moodboard of the final project</p>
+                                    <p class="text-lime-500 text-xl font-bold xl:my-2 2xl:my-6 my-6">In 4 Days</p>
+                                </div>
+
+                                <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                    <h2 class="md:text-xl text-lg pb-6 2xl:pb-9">Web Design</h2>
+                                    <p class="xl:text-sm 2xl:text-base">Draft and moodboard of the final project</p>
+                                    <p class="text-lime-500 text-xl font-bold xl:my-2 2xl:my-6 my-6">In 5 days</p>
+                                </div>
+
+                                <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
+                                    <h2 class="lg:text-xl text-lg pb-6 2xl:pb-9">Web Design</h2>
+                                    <p class="xl:text-sm 2xl:text-base">Draft and moodboard of the final project</p>
+                                    <p class="text-lime-500 text-xl font-bold xl:my-2 2xl:my-6 my-6">In 6 days</p>
+                                </div>
+                                          
                             </div>
-                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
-                                <h2 class="text-xl pb-10">Web Design</h2>
-                                <p>Draft and moodboard of the final project</p>
-                                <p class="text-yellow-300 text-xl font-bold my-6">In 2 Days</p>
-                            </div>
-                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
-                                <h2 class="text-xl pb-10">Web Design</h2>
-                                <p>Draft and moodboard of the final project</p>
-                                <p class="text-lime-500 text-xl font-bold my-6">In 4 Days</p>
-                            </div>
-                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
-                                <h2 class="text-xl pb-10">Web Design</h2>
-                                <p>Draft and moodboard of the final project</p>
-                                <p class="text-lime-500 text-xl font-bold my-6">In 5 days</p>
-                            </div>
-                            <div class="swiper-slide bg-white text-gray-950 font-semibold py-6 px-5 rounded-2xl mt-10 h-60">
-                                <h2 class="text-xl pb-10">Web Design</h2>
-                                <p>Draft and moodboard of the final project</p>
-                                <p class="text-lime-500 text-xl font-bold my-6">In 6 days</p>
-                            </div>
-                          
+                                        
                         </div>
-                        
-                      </div>
+                                    
+                        <!-- Swiper JS -->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                        <script src="app.js"></script>
+                
+                    </section>
+                
+                    <!--calendario-->
                     
-                      <!-- Swiper JS -->
-                      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                      <script src="app.js"></script>
-
-                </section>
-
-    <!--calendario-->
-    
-                <section>
-
-                </section>
-
-    <!--tasks summary-->
-
-                <section class="col-span-2 h-72">
-
-                    <div class="grid-cols-2 grid text-gray-950">
-                        <div>
-                        <h2 class="text-3xl font-bold pb-5">You have completed 5 tasks this week!</h2>
-                        <div>
-                            <div>
-                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                    <section class="mx-auto md:w-[50%] w-60">
+                        <img src="https://programacion.net/files/editor/php-event-calendar.png" alt="calendario">
+                    </section>
+                
+                    <!--tasks summary-->
+                
+                    <section class="mx-auto w-[74%] md:w-[80%] xl:min-w-full col-span-2 h-fit">
+                        
+                        <div class=" md:grid-cols-2 grid p-4 text-gray-950">
+                            <div class="md:pr-5 xl:pr-10 ">
+                                <h2 class="2xl:text-3xl text-2xl font-bold pb-14 xl:pb-5">You have completed 5 tasks this week!</h2>
+                                <div class="overflow-y-auto max-h-52">
+                                <div class="pb-3">
+                                <div class=" border-2 border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
                                     <p class="text-orange-500 font-bold text-lg">Programming: </p>
-                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-sm  text-gray-950 font-bold">Code practice 3</p>
                                     <p class="text-xs text-slate-500 text-end">April 11</p>
                                 </div>
-
-                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
-                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
-                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
-                                    <p class="text-xs text-slate-500 text-end">April 11</p>
                                 </div>
 
-                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                <div class="pb-3">
+                                <div class="border-2 border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
                                     <p class="text-orange-500 font-bold text-lg">Programming: </p>
-                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
                                     <p class="text-xs text-slate-500 text-end">April 11</p>
                                 </div>
+                                </div>
 
-                                <div class=" bg-white shadow-xl rounded-2xl grid-cols-3 grid items-center px-5 py-3">
+                                <div class="pb-3">
+                                <div class="border-2 border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
                                     <p class="text-orange-500 font-bold text-lg">Programming: </p>
-                                    <p class="text-sm text-gray-950 text-center font-bold">Code practice 3</p>
+                                    <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>
+                                </div>
+
+                                <div class="pb-3">
+                                <div class="border-2 border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
                                     <p class="text-xs text-slate-500 text-end">April 11</p>
                                 </div>  
+                                </div>
+
+                                <div class="pb-3">
+                                <div class="border-2  border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div> 
+                                </div> 
+
+                                <div class="pb-3">
+                                <div class="border-2  border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                    <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                    <p class="text-sm text-gray-950  font-bold">Code practice 3</p>
+                                    <p class="text-xs text-slate-500 text-end">April 11</p>
+                                </div>  
+                                </div>
+                                </div>
+                                        
+                            </div>
+
+                            <div class="xl:pl-10">        
+                                <h2 class="2xl:text-3xl text-2xl font-bold pb-14">Today's summary</h2>
+
+                                <div class="overflow-y-auto max-h-52">
+                                    <div class="pb-3">
+                                    <div class="border-2 border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                        <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                        <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
+                                        <p class="text-xs text-slate-500 text-end">April 11</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="pb-3">
+                                    <div class="border-2  border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                        <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                        <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
+                                        <p class="text-xs text-slate-500 text-end">April 11</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="pb-3">
+                                    <div class="border-2  border-gray-300 bg-white rounded-2xl grid-cols-1 grid items-center px-5 py-3">
+                                        <p class="text-orange-500 font-bold text-lg">Programming: </p>
+                                        <p class="text-sm text-gray-950 font-bold">Code practice 3</p>
+                                        <p class="text-xs text-slate-500 text-end">April 11</p>
+                                    </div>
+                                    </div>
+
+                                </div>
+                                            
                             </div>
                         </div>
+                    </section>
+                
+                    <!--courses progress-->
+                
+                    <section class="w-[74%] md:w-[80%] xl:w-[120%] mx-auto pb-6 2xl:pr-6">
+                        <div class="mx-auto md:mx-4 border-2 grid border-gray-300 bg-white rounded-3xl">
+                                <h2 class="text-black text-xl font-bold mb-3 mt-5 ml-8">My Courses progress</h2>
+
+                                <div class="md:text-center mb-3 md:mx-8">
+                                    <div class="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold" >
+                                        <h2 class="text-black text-base text-start">Programming</h2>
+                                        <p class="text-black text-xs py-3 md:py-0">60% done, 40% left</p>
+                                    </div>
+                                <div class="xl:w-[90%] md:w-full w-[80%] h-2 bg-gray-200 rounded-full mx-auto md:mx-0">
+                                    <div class="h-full bg-orange-500 rounded-full" style="width: 60%;"></div>
+                                </div>
+                                </div>
+
+                                <div class="md:text-center mb-3 md:mx-8">
+                                    <div class="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold">
+                                        <h2 class="text-black text-base text-start">Video and Image editing</h2>
+                                        <p class="text-black text-xs py-3 md:py-0">60% done, 40% left</p>
+                                    </div>
+                                <div class="xl:w-[90%] md:w-full w-[80%] h-2 bg-gray-200 rounded-full mx-auto md:mx-0">
+                                    <div class="h-full bg-orange-500 rounded-full" style="width: 60%;"></div>
+                                </div>
+                                </div>
+
+                                <div class="md:text-center mb-3 md:mx-8">
+                                    <div class="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold">
+                                        <h2 class="text-black text-base text-start">Spanish Grammar</h2>
+                                        <p class="text-black text-xs py-3 md:py-0">60% done, 40% left</p>
+                                    </div>
+                                <div class="xl:w-[90%] md:w-full w-[80%] h-2 bg-gray-200 rounded-full mx-auto md:mx-0">
+                                    <div class="h-full bg-orange-500 rounded-full" style="width: 60%;"></div>
+                                </div>
+                                </div>
+
+                                <div class="md:text-center mb-3 md:mx-8">
+                                    <div class="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold">
+                                        <h2 class="text-black text-base text-start">Seminar</h2>
+                                        <p class="text-black text-xs py-3 md:py-0">60% done, 40% left</p>
+                                    </div>
+                                <div class="xl:w-[90%] md:w-full w-[80%] h-2 bg-gray-200 rounded-full mx-auto md:mx-0">
+                                    <div class="h-full bg-orange-500 rounded-full" style="width: 60%;"></div>
+                                </div>
+                                </div>
+
+                                <div class="md:text-center mb-3 md:mx-8">
+                                    <div class="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold">
+                                        <h2 class="text-black text-base text-start">Web Design</h2>
+                                        <p class="text-black text-xs py-3 md:py-0">60% done, 40% left</p>
+                                    </div>
+                                <div class="xl:w-[90%] md:w-full w-[80%] h-2 bg-gray-200 rounded-full mx-auto md:mx-0">
+                                    <div class="h-full bg-orange-500 rounded-full" style="width: 60%;"></div>
+                                </div>
+                                </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                
+                </div>
 
-    <!--courses progress-->
+        </div>
 
-                <section>
-
-                </section>
-
-            </div>
-        </div> 
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
