@@ -4,6 +4,9 @@ import "../../index.css";
 export function SignupMenu(){
 
     return(
+        <div>
+            <div className="hidden xl:block">
+        
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
         <div className="text-center grid ml-[-3rem] text-3xl">
         <Link to="/">
@@ -36,6 +39,65 @@ export function SignupMenu(){
         </div>
         <img className="absolute right-0 top-0 h-full -z-10 pointer-events-none" src="./src/assets/imgs/square.png" alt="Design image"/>
     </header>
+    </div>
+
+    <div className="xl:hidden">
+        
+        <div className="flex justify-center items-center h-screen">
+          <div className="xl:w-[700px] px-10 h-[400px]">
+          <Link to="/">
+              <img
+                className="mb-6"
+                src="./src/assets/imgs/Logo.png"
+                alt="Logo"
+              />
+            </Link>
+            
+            <h1 className="text-center text-xl font-semibold mt-2 mb-2">Sign up here</h1>
+
+            <hr />
+            <div className="flex justify-center mt-10 ">
+              <form action="">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  placeholder="Name"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  placeholder="Password"
+                />
+                  <Link to="/questions">
+                <button
+                  type="submit"
+                  className="py-3 bg-[#E97258] text-white text-xl w-full rounded-xl mt-6"
+                >
+                  Sign up
+                </button>
+                </Link>
+            
+                <p className="text-lg text-[#928F8F] font-semibold mt-10">Already have an account?
+                  <Link to="/login" className="text-lg text-[#7193E3] font-semibold ml-2">Log in</Link>
+              </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 )
 
