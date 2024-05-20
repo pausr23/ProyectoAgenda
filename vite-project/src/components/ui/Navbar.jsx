@@ -2,17 +2,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../index.css";
 
-<<<<<<< HEAD
-export function Navbar(){
-    return(
-    <div className="flex p-5 justify-between relative">
-    <nav className="flex items-center">
-        <ul className="grid grid-flow-col content-center gap-12 pl-[80rem] ml-8 text-sm text-[#7193E3]">
-            <li><NavLink to="/">Home </NavLink> </li>
-            <li><NavLink to="/contact">Contact </NavLink> </li>
-            <li><NavLink to="/about">About us </NavLink> </li>
-            <li><NavLink to="/dashboard">Dashboard </NavLink> </li>
-=======
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,11 +16,11 @@ export function Navbar() {
   return (
     <div className="relative">
       <nav className="flex items-center justify-end p-3 z-10 lg:pr-24 md:pr-0">
-        <ul className="hidden md:flex grid grid-flow-col content-center gap-12 text-sm text-[#7193E3]">
+        <ul className="hidden md:flex  grid-flow-col content-center gap-12 text-sm text-[#7193E3]">
           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
           <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
->>>>>>> 5e7b78ea924bb9aca8a588e4cd4853a2510e6791
+          <li><NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink></li>
         </ul>
         <div className="block md:hidden">
           <button onClick={toggleMenu}>

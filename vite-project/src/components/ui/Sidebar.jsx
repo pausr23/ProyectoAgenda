@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { SideBarMobile } from "./SideBarMobile.jsx";
+import { SideBarMobile } from "../activity/SideBarMobile.jsx";
 
 import "../../index.css";
 
