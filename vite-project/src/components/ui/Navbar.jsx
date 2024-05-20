@@ -16,10 +16,14 @@ export function Navbar() {
   return (
     <div className="relative">
       <nav className="flex items-center justify-end p-3 z-10 lg:pr-24 md:pr-0">
-        <ul className="hidden md:flex grid grid-flow-col content-center gap-12 text-sm text-[#7193E3]">
+        <ul className="hidden md:flex  grid-flow-col content-center gap-12 text-sm text-[#7193E3]">
           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
           <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
+<<<<<<< HEAD
+          <li><NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink></li>
+=======
+>>>>>>> 699da36c0623cf3b77d47add87903abeacbbcf59
         </ul>
         <div className="block md:hidden">
           <button onClick={toggleMenu}>
