@@ -1,28 +1,32 @@
-import "../../index.css";
+import React from 'react';
+
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { SideBarMobile } from "./SideBarMobile.jsx";
 
-export function Sidebar(){
+import "../../index.css";
+
+export function SideBar(){
 
     return(
-        <div className="grid left bg-[#7193E3] w-[12%] h-[100vh]">
-            <div className="text-center">
-            
-            <Link to="/profile">
-            <img className="w-[11rem] pt-[7rem] pl-14" src="./src/assets/imgs/pp.png" alt="profile"/>
-            </Link>
-            
-            <p className="font-semibold text-white text-base m-auto mt-2">Michael</p>
-            <ul className="font-side text-md text-left pl-14 pt-24"> 
-        <li className="pb-20 text-white"><NavLink to="/activities">Activities</NavLink></li>
-        <li className="pb-20 text-white"><NavLink to="/dashboard">Dashboard</NavLink></li>
-        <li className="pb-20 text-white"><NavLink to="/contact">Contact</NavLink></li>
-        <li className="pb-20 text-white"><NavLink to="/about">About Us</NavLink></li>
-        <li><NavLink className="text-white" to="/">Log Out</NavLink></li>
-    </ul>
+
+        <div>
+            <div className="fixed hidden xl:block bg-indigo-400 text-white font-semibold h-screen">
+                <img className="w-32 pb-3 pt-24 mx-auto" src="./src/assets/imgs/pp.png" alt="profile" />
+                <p className="text-base m-auto text-center">Michael</p>
+                <ul className="text-xl px-10 py-16 2xl:py-16"> 
+                    <li className="pb-12 2xl:pb-16"><NavLink>Activities</NavLink></li>
+                    <li className="pb-12 2xl:pb-16"><NavLink>Dashboard</NavLink></li>
+                    <li className="pb-12 2xl:pb-16"><NavLink>Contact</NavLink></li>
+                    <li className="pb-20 2xl:pb-16"><NavLink>About Us</NavLink></li>
+                    <li className="pb-5 2xl:pb-7"><NavLink>Log Out</NavLink></li>
+                </ul>
             </div>
-    </div>    
+
+        <SideBarMobile />
+
+        </div>
+        
 
 )
-
 }

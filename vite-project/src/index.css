@@ -48,3 +48,22 @@
 .swiper-slide2 {
     background: #fff;
   }
+
+  @media(max-width: 1200px){
+    .nav-list {
+        left: -18rem;
+        width: 45%;
+        z-index: 2;
+        transition: left .35s, background .35s;
+    }
+
+    .mobile-cb {
+        position: fixed;
+        top: 3rem;
+        left: 1.6rem;
+    }
+
+    .mobile-cb:checked ~ .nav-list {
+        left: 0;
+    }
+}

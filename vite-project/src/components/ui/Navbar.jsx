@@ -9,6 +9,7 @@ export function Navbar(){
             <li><NavLink to="/">Home </NavLink> </li>
             <li><NavLink to="/contact">Contact </NavLink> </li>
             <li><NavLink to="/about">About us </NavLink> </li>
+            <li><NavLink to="/dashboard">Dashboard </NavLink> </li>
         </ul>
     </nav>
 </div>
