@@ -5,9 +5,9 @@ export function QuestionsPage(){
 
     return(
         <div> 
-            <div className="hidden xl:block">
-        <div className="flex justify-center items-center h-[100vh] pl-16">
-        <div className="w-[75rem] h-[46rem] bg-white rounded-2xl flex p-16">
+            <div className="hidden xl:block ipad:block ">
+        <div className="items-center h-[100vh] pl-16 grid ml-80 ipad:ml-40">
+        <div className="w-[75rem] h-[46rem] bg-white rounded-2xl flex p-16 ipad:w-[50rem] ipad:h-[30rem]">
     <div className="w-32 h-32 rounded-full overflow-hidden">
         <img className="object-cover object-center h-32" src="./src/assets/imgs/pp.png" alt="Profile picture"/>
     </div>
@@ -71,8 +71,8 @@ export function QuestionsPage(){
             <h1 className="text-center text-xl  mt-6 mb-2">Michael Johnson</h1>
             <h1 className="text-center text-xl  mt-4 mb-2">Michael@gmail.com</h1>
 
-            <div className="flex justify-center mt-10">
-              <form action="">
+            <div className="flex justify-center mt-10 ">
+              <form action="" className="grid justify-items-center">
                 <input
                   type="text"
                   name=""
@@ -104,7 +104,7 @@ export function QuestionsPage(){
 
                 <button
                   type="submit"
-                  className="py-3  border border-[#7193E3]  text-[#7193E3] text-xl w-[19rem] rounded-3xl mt-6 grid "
+                  className="py-3  border border-[#7193E3]  text-[#7193E3] text-xl w-[19rem] rounded-3xl mt-6 grid"
                 >
                   Submit
                 </button>

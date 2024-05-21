@@ -10,7 +10,8 @@ export function SignupMenu(){
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
         <div className="text-center grid ml-[-3rem] text-3xl">
         <Link to="/">
-                    <img className="w-[35%] mx-auto ml-[19.5rem] mt-[10rem]" src="./src/assets/imgs/Logo.png" alt="Logo"/>
+        <img className="w-[35%] mx-auto lg:mx-auto mt-[10rem]" src="./src/assets/imgs/Logo.png" alt="Logo"/>
+
                 </Link>
             <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Sign up here</p>
             
@@ -31,20 +32,20 @@ export function SignupMenu(){
             </form>
         </div>
 
-        <div className="ml-auto text-5xl mr-[9rem] mt-[10rem]">
-            <h1 className="font-titles-secondary mb-4 text-left text-white">We Are Delighted To Have</h1>
-            <h1 className="font-titles-secondary mb-4 text-left">You Joining Us</h1>
-            <p className="text-white mt-24 text-3xl text-left">Your path towards a better future starts</p>
-            <p className="text-white mt-2 text-3xl text-left">today, let’s create an account first!</p>
-        </div>
-        <img className="absolute right-0 top-0 h-full -z-10 pointer-events-none" src="./src/assets/imgs/square.png" alt="Design image"/>
+        <div className="ml-auto lg:ml-[10rem] text-5xl mr-[9rem] mt-[10rem]">
+  <h1 className="font-titles-secondary mb-4 text-left text-white">We Are Delighted To Have</h1>
+  <h1 className="font-titles-secondary mb-4 text-left">You Joining Us</h1>
+  <p className="text-white mt-24 text-3xl text-left">Your path towards a better future starts</p>
+  <p className="text-white mt-2 text-3xl text-left">today, let’s create an account first!</p>
+</div>
+
     </header>
     </div>
 
     <div className="xl:hidden">
         
         <div className="flex justify-center items-center h-screen">
-          <div className="xl:w-[700px] px-10 h-[400px]">
+          <div className="xl:w-[700px] px-10 h-[400px] grid justify-items-center">
           <Link to="/">
               <img
                 className="mb-6"
