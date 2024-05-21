@@ -20,10 +20,6 @@ export function Navbar() {
           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
           <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
-<<<<<<< HEAD
-          <li><NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink></li>
-=======
->>>>>>> 699da36c0623cf3b77d47add87903abeacbbcf59
         </ul>
         <div className="block md:hidden">
           <button onClick={toggleMenu}>
@@ -45,6 +41,7 @@ export function Navbar() {
             <li className="mb-5"><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
             <li className="mb-5"><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
             <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
+            <li><NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink></li>
           </ul>
         </div>
       )}

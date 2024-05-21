@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 export function SideBarMobile () {
+
     const { mobileCheckboxChecked, setMobileCheckboxChecked } = useCheckBox();
     
     return (
@@ -17,7 +18,7 @@ export function SideBarMobile () {
                 checked={mobileCheckboxChecked}
                 onChange={() => setMobileCheckboxChecked(!mobileCheckboxChecked)}
             />
-            <label className="fixed py-6 left-6 z-40 h-8 cursor-pointer xl:hidden flex items-center justify-center" htmlFor="mobile-checkbox">
+            <label className="fixed py-12 left-6 z-40 h-8 cursor-pointer xl:hidden flex items-center justify-center" htmlFor="mobile-checkbox">
                 {mobileCheckboxChecked ? (
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -34,7 +35,7 @@ export function SideBarMobile () {
                 <div className="bg-[#7193E3] h-screen content-center grid fixed">
                     
                     <Link to="/profile">
-                        <img className="w-32 pb-3 mx-auto mt-10" src="./src/assets/imgs/pp.png" alt="profile" />
+                        <img className="w-24 pb-3 mx-auto mt-10" src="./src/assets/imgs/pp.png" alt="profile" />
                     </Link>
                     
                     <p className="text-base text-white text-center pb-6 font-semibold">Michael</p>
