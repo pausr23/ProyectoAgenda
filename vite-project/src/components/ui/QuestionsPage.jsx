@@ -71,7 +71,6 @@ export function QuestionsPage(){
             <h1 className="text-center text-xl  mt-6 mb-2">Michael Johnson</h1>
             <h1 className="text-center text-xl  mt-4 mb-2">Michael@gmail.com</h1>
 
-            <hr />
             <div className="flex justify-center mt-10">
               <form action="">
                 <input
@@ -105,7 +104,7 @@ export function QuestionsPage(){
 
                 <button
                   type="submit"
-                  className="py-3  border border-[#7193E3]  text-[#7193E3] text-xl w-[19rem] rounded-xl mt-6 grid "
+                  className="py-3  border border-[#7193E3]  text-[#7193E3] text-xl w-[19rem] rounded-3xl mt-6 grid "
                 >
                   Submit
                 </button>

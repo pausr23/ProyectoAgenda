@@ -41,7 +41,7 @@ export function Navbar() {
             <li className="mb-5"><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
             <li className="mb-5"><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
             <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
-            <li><NavLink to="/dashboard" onClick={closeMenu}>Dashboard</NavLink></li>
+            
           </ul>
         </div>
       )}
