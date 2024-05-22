@@ -1,9 +1,9 @@
 import { PendingTasks } from "./PendingTasks";
 import { Calendarly } from "./Calendarly";
-
+import { TasksSummary } from "./TasksSummary";
+import { CoursesProgress } from "./CoursesProgress";
 
 import "../../index.css";
-
 
 export function DashboardContent(){
 
@@ -13,6 +13,8 @@ export function DashboardContent(){
 
             <PendingTasks />
             <Calendarly />
+            <TasksSummary />
+            <CoursesProgress />
 
         </div>
 

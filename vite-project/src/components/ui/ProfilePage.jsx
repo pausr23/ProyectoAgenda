@@ -6,9 +6,9 @@ export function ProfilePage(){
     return(
         <div className="flex justify-center items-center h-[100vh] pl-16">
         <div className="w-[75rem] h-[46rem] bg-white rounded-2xl flex p-16">
-    <div className="w-32 h-32 rounded-full overflow-hidden">
-        <img className="object-cover object-center h-32" src="./src/assets/imgs/pp.png" alt="Profile picture"/>
-    </div>
+            <div className="w-32 h-32 rounded-full overflow-hidden">
+                <img className="object-cover object-center h-32" src="./src/assets/imgs/pp.png" alt="Profile picture"/>
+            </div>
     
     <div className="text-center mt-4 ml-20">
         <div className="grid grid-cols-2 text-left">

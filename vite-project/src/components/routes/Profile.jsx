@@ -7,5 +7,5 @@ export function Profile() {
             <SideBar />
             <ProfilePage />
         </div>
-)
+    )
 }
