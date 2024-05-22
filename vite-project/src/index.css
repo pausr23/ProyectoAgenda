@@ -68,3 +68,10 @@
         left: 0;
     }
 }
+
+@media screen and (max-width: 1366px) and (max-height: 1024px) {
+    .ml-80 {
+      margin-left: 9rem;
+      margin-right: auto;
+    }
+}
