@@ -75,3 +75,16 @@
       margin-right: auto;
     }
 }
+
+/* botones activities*/
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+/* Media query para pantallas de 428px o menos */
+@media (max-width: 428px) {
+    .grid-cols-5 {
+        grid-template-columns: 1fr;
+    }
+}

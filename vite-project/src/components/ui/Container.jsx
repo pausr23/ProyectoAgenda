@@ -1,5 +1,6 @@
 import { MyCategories } from "./MyCategories";
 import { Options } from "./Options";
+import { MyCards } from "./MyCards";
 
 import "../../index.css";
 
@@ -20,12 +21,22 @@ export function Container(){
         { "id":4, "name":"Event" },
     ]
 
+    const card = [
+        { "id":1, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" }, 
+        { "id":2, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" },
+        { "id":3, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" },
+        { "id":4, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" },
+        { "id":5, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" },
+        { "id":6, "title":"ExpoMedia", "img": "https://i.ibb.co/r4m5BhJ/expo.jpg", "date":"August 23, 9:00 am", "description":"Informatics and Multimedia innovating exposition", "label":"Career", "label2":"Event", "label3":"Active" },
+    ]
+
 
     return(
 
             <div>
                 <MyCategories datas={categories}/>
                 <Options datas={option}/>
+                <MyCards datas={card}/>
             </div>
             
 
