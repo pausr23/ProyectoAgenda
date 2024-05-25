@@ -20,17 +20,17 @@ export function InfoCards({title, img, date, description, label, label2, label3}
                     </div>
                 </div>
                 <div>
-                    <div class="grid grid-cols-2">
-                        <img class="w-4 mx-auto" src="https://img.icons8.com/glyph-neue/64/give-way.png" />
-                        <h2 class="mb-2">{label}</h2>
+                    <div className="grid grid-cols-2">
+                        <img className="w-4 mx-auto" src="https://img.icons8.com/glyph-neue/64/give-way.png" />
+                        <h2 className="mb-2">{label}</h2>
                      </div>
-                    <div class="grid grid-cols-2">
-                        <img class="w-4 mx-auto" src="https://img.icons8.com/ios/50/bookmark-ribbon--v1.png" />
+                    <div className="grid grid-cols-2">
+                        <img className="w-4 mx-auto" src="https://img.icons8.com/ios/50/bookmark-ribbon--v1.png" />
                         <h2 class="mb-2">{label2}</h2>
                     </div>
-                    <div class="grid grid-cols-2">
-                        <img class="w-4 mx-auto" src="https://img.icons8.com/ios-filled/50/FD7E14/filled-circle.png" />
-                        <h2 class="mb-2">{label3}</h2>
+                    <div className="grid grid-cols-2">
+                        <img className="w-4 mx-auto" src="https://img.icons8.com/ios-filled/50/FD7E14/filled-circle.png" />
+                        <h2 className="mb-2">{label3}</h2>
                     </div>
                 </div>
              </div>

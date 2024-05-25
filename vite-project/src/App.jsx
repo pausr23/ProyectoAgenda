@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "./components/routes/Home.jsx";
 import { About } from "./components/routes/About.jsx";
-import { Contact } from "./components/routes/Contact.jsx";
+import { Admin } from "./components/routes/Admin.jsx";
 import { Activities } from "./components/routes/Activities.jsx";
 import { Dashboard } from "./components/routes/Dashboard.jsx";
 import { Questions } from "./components/routes/Questions.jsx";
@@ -23,7 +23,7 @@ export function App() {
       <Route path="/*" element={<Navigate to="/" />} />
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/admin" element={<Admin />} />
       <Route path="/activities" element={<Activities />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/questions" element={<Questions />} />
