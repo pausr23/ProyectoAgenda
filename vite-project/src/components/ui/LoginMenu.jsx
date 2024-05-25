@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "../../index.css";
+import { InputField } from "../ui/InputField.jsx";
 
 export function LoginMenu() {
   return (
     <div>
       <div className="hidden xl:block pt-16">
-        
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
           <div className="text-center grid ml-[-3rem] text-3xl">
             <Link to="/">
@@ -17,18 +17,17 @@ export function LoginMenu() {
             </Link>
             <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Log in to your account</p>
 
-            <form action="" method="post" className="grid grid-cols-1 gap-2"> 
-              <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
-  
-              <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
-  
+            <form action="" method="post" className="grid grid-cols-1 gap-2">
+              <InputField type="text" id="email" name="email" placeholder="Email" />
+              <InputField type="password" id="password" name="password" placeholder="Password" />
+
               <button className="text-white bg-[#E97258] w-[55%] text3xl rounded-3xl px-4 py-4 cursor-pointer mt-4 mx-auto" type="submit">Log in</button>
               <div className="inline-block">
-                  <a className="text-xl text-[#928F8F] font-semibold ml-[19rem]" href="signup.html">Forgot your password?</a>
+                <a className="text-xl text-[#928F8F] font-semibold ml-[19rem]" href="signup.html">Forgot your password?</a>
               </div>
-              
-              <p className="text-2xl text-[#928F8F] font-semibold mt-10">Don't have an account? 
-                  <Link to="/signup" className="text-2xl text-[#7193E3] font-semibold ml-2">Create one</Link>
+
+              <p className="text-2xl text-[#928F8F] font-semibold mt-10">Don't have an account?
+                <Link to="/signup" className="text-2xl text-[#7193E3] font-semibold ml-2">Create one</Link>
               </p>
             </form>
           </div>
@@ -40,56 +39,43 @@ export function LoginMenu() {
         </header>
       </div>
 
-  
-        
-        <div className="xl:hidden grid items-center h-screen">
-          <div className="px-10">
+
+      <div className="xl:hidden grid items-center h-screen">
+        <div className="px-10">
           <Link to="/">
-              <img
-                className="mx-auto mb-6"
-                src="./src/assets/imgs/Logo.png"
-                alt="Logo"
-              />
-            </Link>
-            
-            <h1 className="text-center text-xl font-semibold mt-2 mb-2">Log in to your account</h1>
+            <img
+              className="mx-auto mb-6"
+              src="./src/assets/imgs/Logo.png"
+              alt="Logo"
+            />
+          </Link>
 
-            <div className="md:w-[75%] grid mx-auto mt-10 ">
-              <form className="text-center mx-auto md:w-[80%]" action="">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
-                  placeholder="Email"
-                />
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
-                  placeholder="Password"
-                />
+          <h1 className="text-center text-xl font-semibold mt-2 mb-2">Log in to your account</h1>
 
-                <button
-                  type="submit"
-                  className="py-3 bg-[#E97258] text-white text-xl w-full rounded-xl mt-6"
-                >
-                  Log in
-                </button>
-                <div className="flex justify-end mt-3 mb-4 font-semibold">
-                  <a href="#" className="text-[#928F8F]">
-                    Forgot password
-                  </a>
-                </div>
-                <p className="text-lg text-[#928F8F] font-semibold mt-10">Don't have an account? 
-                  <Link to="/signup" className="text-lg text-[#7193E3] font-semibold ml-2">Create one</Link>
+          <div className="md:w-[75%] grid mx-auto mt-10 ">
+
+            <form className="text-center mx-auto md:w-[80%]" action="">
+              <InputField className="py-3 p-5 rounded-md  bg-white w-full mb-4" type="text" id="profileEmail" name="email" placeholder="Email" />
+              <InputField className="py-3 p-5 rounded-md  bg-white w-full mb-4" type="password" id="profilePassword" name="password" placeholder="Password" />
+
+              <button
+                type="submit"
+                className="py-3 bg-[#E97258] text-white text-xl w-full rounded-xl mt-6"
+              >
+                Log in
+              </button>
+              <div className="flex justify-end mt-3 mb-4 font-semibold">
+                <a href="#" className="text-[#928F8F]">
+                  Forgot password
+                </a>
+              </div>
+              <p className="text-lg text-[#928F8F] font-semibold mt-10">Don't have an account?
+                <Link to="/signup" className="text-lg text-[#7193E3] font-semibold ml-2">Create one</Link>
               </p>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
-      
+      </div>
     </div>
   );
 }
