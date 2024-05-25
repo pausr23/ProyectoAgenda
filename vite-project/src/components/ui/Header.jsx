@@ -8,8 +8,8 @@ export function Header(){
                  <h2 className="text-3xl text-white pt-14">Your personalized university guide</h2>
                  <h2 className="text-3xl text-white pt-4">always up-to-date</h2>
              </div>
-             <div className="align-bottom">
-                 <img className="pt-0 md:pt-64 hidden md:block" src="./src/assets/imgs/homepage_woman.png" alt="Homepage" />
+             <div>
+                 <img className="mx-auto pt-0 md:pt-64 hidden md:block" src="./src/assets/imgs/homepage_woman.png" alt="Homepage" />
              </div>
          </header>
      )

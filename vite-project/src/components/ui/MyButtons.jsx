@@ -6,7 +6,7 @@ export function MyButtons({datas}){
 
     return(
 
-        <div className="flex flex-wrap justify-center xs:items-center">
+        <div className="grid grid-cols-1 lg:flex lg:flex-wrap justify-center ">
             { datas.map( data => <ButtonsAdmin key={data.id} name={data.name} img={data.img} />)}
         </div>
 

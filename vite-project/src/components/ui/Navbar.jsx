@@ -15,7 +15,7 @@ export function Navbar() {
 
   return (
     <div className="relative">
-      <nav className="flex items-center justify-end p-3 z-10 lg:pr-24 md:pr-0">
+      <nav className="flex items-center justify-end md:pt-10 p-3 z-10 lg:pr-24 md:pr-0">
         <ul className="font-semibold hidden md:flex grid-flow-col content-center gap-12  text-[#7193E3]">
           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>

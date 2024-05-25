@@ -15,7 +15,7 @@ export function SignupMenu(){
                 </Link>
             <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Sign up here</p>
             
-            <form action="" method="post" className="grid grid-cols-1 gap-2"> 
+            <form action="" method="post" className="grid grid-cols-1 gap-6"> 
                 <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="name" id="name" name="name" required placeholder="Name"/>
                 <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
 
@@ -59,21 +59,21 @@ export function SignupMenu(){
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white w-full  mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full  mb-4"
                   placeholder="Name"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white w-full mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
                   placeholder="Email"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white w-full mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
                   placeholder="Password"
                 />
                   <Link to="/questions">

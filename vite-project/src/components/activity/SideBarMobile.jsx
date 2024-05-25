@@ -42,7 +42,7 @@ export function SideBarMobile () {
                     <ul className="text-white font-semibold text-lg px-10 py-10 mx-auto">
                     <li className="pb-12 md:pb-16 text-white"><NavLink to="/activities">Activities</NavLink></li>
                     <li className="pb-12 md:pb-16 text-white"><NavLink to="/dashboard">Dashboard</NavLink></li>
-                    <li className="pb-12 md:pb-16 text-white"><NavLink to="/admin">Admin</NavLink></li>
+                    <li className="pb-12 md:pb-16 text-white"><NavLink to="/contact">Contact</NavLink></li>
                     <li className="pb-12 md:pb-16 text-white"><NavLink to="/about">About Us</NavLink></li>
                     <li><NavLink className="text-white" to="/">Log Out</NavLink></li>
                     </ul>
