@@ -16,7 +16,7 @@ export function Navbar() {
   return (
     <div className="relative">
       <nav className="flex items-center justify-end p-3 z-10 lg:pr-24 md:pr-0">
-        <ul className="hidden md:flex  grid-flow-col content-center gap-12 text-sm text-[#7193E3]">
+        <ul className="font-semibold hidden md:flex grid-flow-col content-center gap-12  text-[#7193E3]">
           <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
           <li><NavLink to="/about" onClick={closeMenu}>About us</NavLink></li>
@@ -36,7 +36,7 @@ export function Navbar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="absolute top-full h-[100vh] left-0 right-0 bg-white p-4 text-[#7193E3] z-20">
+        <div className="md:hidden absolute top-full h-[100vh] left-0 right-0 bg-color p-4 text-[#7193E3] text-xl font-semibold z-20">
           <ul>
             <li className="mb-5"><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
             <li className="mb-5"><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>

@@ -4,13 +4,13 @@ import "../../index.css";
 export function LoginMenu() {
   return (
     <div>
-      <div className="hidden xl:block">
+      <div className="hidden xl:block pt-16">
         
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
           <div className="text-center grid ml-[-3rem] text-3xl">
             <Link to="/">
               <img
-                className="w-[35%] mx-auto ml-[19.5rem] lg:mx-auto mt-[10rem]"
+                className="w-[35%] mx-auto"
                 src="./src/assets/imgs/Logo.png"
                 alt="Logo"
               />
@@ -18,9 +18,9 @@ export function LoginMenu() {
             <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Log in to your account</p>
 
             <form action="" method="post" className="grid grid-cols-1 gap-2"> 
-              <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
+              <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
   
-              <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
+              <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
   
               <button className="text-white bg-[#E97258] w-[55%] text3xl rounded-3xl px-4 py-4 cursor-pointer mt-4 mx-auto" type="submit">Log in</button>
               <div className="inline-block">
@@ -33,22 +33,20 @@ export function LoginMenu() {
             </form>
           </div>
 
-          <div className="ml-auto lg:ml-[10rem] text-5xl mr-[9rem] mt-[10rem]">
-            <h1 className="font-titles-secondary mb-4 text-left text-white">We Are Happy To See You</h1>
-            <h1 className="font-titles-secondary mb-4 text-left">Once Again</h1>
-            <p className="text-white mt-24 text-3xl text-left">Feel free to enter your information</p>
-            <p className="text-white mt-2 text-3xl text-left">anytime and log back into our website!</p>
+          <div className="ml-auto lg:ml-[10rem] mr-[9rem] mt-16">
+            <h1 className="font-titles-secondary text-4xl 2xl:text-5xl text-left 2xl:leading-normal leading-relaxed text-white">We Are Delighted To Have You Joining Us</h1>
+            <p className="text-white mt-16 text-2xl 2xl:text-3xl text-left leading-relaxed 2xl:leading-normal">Your path towards a better future starts today, <br /> let’s create an account first! </p>
           </div>
         </header>
       </div>
 
-      <div className="xl:hidden">
+  
         
-        <div className="flex justify-center items-center h-screen">
-          <div className="xl:w-[700px] px-10 h-[400px] grid justify-items-center">
+        <div className="xl:hidden grid items-center h-screen">
+          <div className="px-10">
           <Link to="/">
               <img
-                className="mb-6"
+                className="mx-auto mb-6"
                 src="./src/assets/imgs/Logo.png"
                 alt="Logo"
               />
@@ -56,21 +54,20 @@ export function LoginMenu() {
             
             <h1 className="text-center text-xl font-semibold mt-2 mb-2">Log in to your account</h1>
 
-            <hr />
-            <div className="flex justify-center mt-10">
-              <form action="">
+            <div className="md:w-[75%] grid mx-auto mt-10 ">
+              <form className="text-center mx-auto md:w-[80%]" action="">
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-4"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
                   placeholder="Email"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-4"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-4"
                   placeholder="Password"
                 />
 
@@ -92,7 +89,7 @@ export function LoginMenu() {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }

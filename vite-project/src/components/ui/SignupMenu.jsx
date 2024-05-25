@@ -5,21 +5,21 @@ export function SignupMenu(){
 
     return(
         <div>
-            <div className="hidden xl:block">
+            <div className="hidden xl:block pt-16">
         
         <header className="grid items-center w-[100%] p-[2rem] grid-cols-2 relative">
         <div className="text-center grid ml-[-3rem] text-3xl">
         <Link to="/">
-        <img className="w-[35%] mx-auto lg:mx-auto mt-[10rem]" src="./src/assets/imgs/Logo.png" alt="Logo"/>
+        <img className="w-[35%] mx-auto" src="./src/assets/imgs/Logo.png" alt="Logo"/>
 
                 </Link>
             <p className="font-semibold mb-10 mt-[1rem] text-[1.5rem]">Sign up here</p>
             
             <form action="" method="post" className="grid grid-cols-1 gap-2"> 
-                <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="name" id="name" name="name" required placeholder="Name"/>
-                <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
+                <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="name" id="name" name="name" required placeholder="Name"/>
+                <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="text" id="email" name="email" required placeholder="Email"/>
 
-                <input className="p-1 w-[55%] border-b-2 border-[#928F8F] mb-8 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
+                <input className="p-1 w-[55%] pl-3 rounded-t-lg border-b-2 border-[#928F8F] 2xl:mb-8 mb-4 font-semibold text-2xl outline-none text-[#01244A] mx-auto" type="password" id="password" name="password" required placeholder="Password"/>
 
                 <Link to="/questions">
                 <button className="text-white bg-[#E97258] w-[55%] text3xl rounded-3xl px-4 py-4 cursor-pointer mt-4 mx-auto" type="submit">Sign up</button>
@@ -32,23 +32,19 @@ export function SignupMenu(){
             </form>
         </div>
 
-        <div className="ml-auto lg:ml-[10rem] text-5xl mr-[9rem] mt-[10rem]">
-  <h1 className="font-titles-secondary mb-4 text-left text-white">We Are Delighted To Have</h1>
-  <h1 className="font-titles-secondary mb-4 text-left">You Joining Us</h1>
-  <p className="text-white mt-24 text-3xl text-left">Your path towards a better future starts</p>
-  <p className="text-white mt-2 text-3xl text-left">today, let’s create an account first!</p>
-</div>
-
+        <div className="ml-auto lg:ml-[10rem] mr-[9rem] mt-16">
+          <h1 className="font-titles-secondary text-4xl 2xl:text-5xl text-left 2xl:leading-normal leading-relaxed text-white">We Are Delighted To Have You Joining Us</h1>
+          <p className="text-white mt-16 text-2xl 2xl:text-3xl text-left leading-relaxed 2xl:leading-normal">Your path towards a better future starts today, <br /> let’s create an account first! </p>
+        </div>
+ 
     </header>
     </div>
 
-    <div className="xl:hidden">
-        
-        <div className="flex justify-center items-center h-screen">
-          <div className="xl:w-[700px] px-10 h-[400px] grid justify-items-center">
+        <div className="xl:hidden grid items-center h-screen">
+          <div className="px-10">
           <Link to="/">
               <img
-                className="mb-6"
+                className="mx-auto mb-6"
                 src="./src/assets/imgs/Logo.png"
                 alt="Logo"
               />
@@ -56,28 +52,28 @@ export function SignupMenu(){
             
             <h1 className="text-center text-xl font-semibold mt-2 mb-2">Sign up here</h1>
 
-            <hr />
-            <div className="flex justify-center mt-10 ">
-              <form action="">
+            
+            <div className="md:w-[75%] grid mx-auto mt-10 ">
+              <form className="text-center mx-auto md:w-[80%]" action="">
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full  mb-2"
                   placeholder="Name"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-2"
                   placeholder="Email"
                 />
                 <input
                   type="text"
                   name=""
                   id=""
-                  className="py-3 p-5 rounded-md  bg-white md:w-[500px] w-[300px] bg-[#7193E3] mb-2"
+                  className="py-3 p-5 rounded-md  bg-white w-full mb-2"
                   placeholder="Password"
                 />
                   <Link to="/questions">
@@ -91,12 +87,12 @@ export function SignupMenu(){
             
                 <p className="text-lg text-[#928F8F] font-semibold mt-10">Already have an account?
                   <Link to="/login" className="text-lg text-[#7193E3] font-semibold ml-2">Log in</Link>
-              </p>
+                </p>
               </form>
             </div>
           </div>
         </div>
-      </div>
+      
 
     </div>
 
