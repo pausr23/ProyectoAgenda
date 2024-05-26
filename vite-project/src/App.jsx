@@ -5,6 +5,7 @@ import { Admin } from "./components/routes/Admin.jsx";
 import { Activities } from "./components/routes/Activities.jsx";
 import { Dashboard } from "./components/routes/Dashboard.jsx";
 import { Questions } from "./components/routes/Questions.jsx";
+import { Add } from "./components/routes/Add.jsx";
 
 import { Login } from "./components/routes/Login.jsx";
 import { Signup } from "./components/routes/Signup.jsx";
@@ -25,6 +26,8 @@ export function App() {
                     <Route path="/activities" element={<Activities />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/questions" element={<Questions />} />
+
+                    <Route path="/add" element={<Add />} />
 
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />

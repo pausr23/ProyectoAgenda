@@ -6,7 +6,7 @@ import "../../index.css";
 export function AdminContent(){
 
     const button = [
-        { "id":1, "name":"Add New Activity", "img":"https://i.ibb.co/CJ8D5bP/add.png" },
+        { "id":1, "name":"Add New Activity", "img":"https://i.ibb.co/CJ8D5bP/add.png"},
         { "id":2, "name":"Edit Activity", "img":"https://i.ibb.co/DgNxnsh/edit.png" },
         { "id":3, "name":"Delete Activity", "img":"https://i.ibb.co/dPz988t/delete.png" },
     ]

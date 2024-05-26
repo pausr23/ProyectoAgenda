@@ -21,7 +21,7 @@ export function SideBar() {
                 <ul className="text-xl px-10 py-16 2xl:py-16">
                     <li className="pb-12 2xl:pb-16"><NavLink to="/activities">Activities</NavLink></li>
                     <li className="pb-12 2xl:pb-16"><NavLink to="/dashboard">Dashboard</NavLink></li>
-                    <li className="pb-12 2xl:pb-16"><NavLink to="/contact">Contact</NavLink></li>
+                    <li className="pb-12 2xl:pb-16"><NavLink to="/admin">Admin</NavLink></li>
                     <li className="pb-20 2xl:pb-16"><NavLink to="/about">About Us</NavLink></li>
                     <li className="pb-5 2xl:pb-7"><NavLink to="/">Log out</NavLink></li>
                 </ul>
