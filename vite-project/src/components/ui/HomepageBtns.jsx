@@ -3,7 +3,7 @@ import "../../index.css";
 
 export function HomepageBtns(){
     return(
-        <div className="absolute pl-8 lg:flex-row lg:items-end flex flex-col 2xl:bottom-[20rem] bottom-28 lg:bottom-[15rem] lg:space-x-6 space-y-6 ">
+        <div className="absolute pl-8 lg:flex-row lg:items-end flex flex-col 2xl:bottom-[10rem] bottom-28 lg:bottom-[15rem] lg:space-x-6 space-y-6 ">
             <Link to="/signup">
                 <button className="bg-[#ED715F] border-[#ED715F] rounded-[10rem] border-4 px-14 py-2">
                     <h1 className="text-white font-semibold text-xl md:text-lg sm:text-md xs:text-sm">Sign up</h1>
