@@ -1,4 +1,4 @@
-import { InfoCards } from "./InfoCards";
+import { InfoCards } from "../ui/InfoCards";
 
 import "../../index.css";
 

@@ -1,5 +1,5 @@
 import "../../index.css";
-import { MyDescriptions } from "./MyDescriptions";
+import { MyDescriptions } from "../activity/MyDescriptions";
 
 export function CardsDescription(){
 

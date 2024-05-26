@@ -1,4 +1,4 @@
-import { NewLabel } from "./NewLabel";
+import { NewLabel } from "../ui/NewLabel";
 
 import "../../index.css";
 

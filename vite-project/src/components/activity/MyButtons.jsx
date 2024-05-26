@@ -1,4 +1,4 @@
-import { ButtonsAdmin } from "./ButtonsAdmin";
+import { ButtonsAdmin } from "../ui/ButtonsAdmin";
 
 import "../../index.css";
 

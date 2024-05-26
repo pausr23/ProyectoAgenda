@@ -1,4 +1,4 @@
-import { MyButtons } from "./MyButtons";
+import { MyButtons } from "../activity/MyButtons";
 
 
 import "../../index.css";

@@ -1,5 +1,5 @@
 import "../../index.css";
-import { MyLabels } from "./MyLabels";
+import { MyLabels } from "../activity/MyLabels";
 
 export function CardsCont(){
 

@@ -1,4 +1,4 @@
-import { NewDescription } from "./NewDescription";
+import { NewDescription } from "../ui/NewDescription";
 
 import "../../index.css";
 

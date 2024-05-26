@@ -1,6 +1,6 @@
-import { MyCategories } from "./MyCategories";
-import { Options } from "./Options";
-import { MyCards } from "./MyCards";
+import { MyCategories } from "../activity/MyCategories";
+import { Options } from "../activity/Options";
+import { MyCards } from "../activity/MyCards";
 
 import "../../index.css";
 

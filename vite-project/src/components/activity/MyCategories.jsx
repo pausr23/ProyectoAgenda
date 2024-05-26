@@ -1,4 +1,4 @@
-import { ButtonsCategories } from "./ButtonsCategories";
+import { ButtonsCategories } from "../ui/ButtonsCategories";
 
 import "../../index.css";
 

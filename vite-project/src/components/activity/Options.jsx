@@ -1,4 +1,4 @@
-import { OptionCategories } from "./OptionsCategories";
+import { OptionCategories } from "../ui/OptionsCategories";
 
 import "../../index.css";
 
