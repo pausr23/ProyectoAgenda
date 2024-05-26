@@ -1,4 +1,4 @@
-import { SummaryCard } from "./SummaryCard.jsx";
+import { SummaryCard } from "../ui/SummaryCard.jsx";
 import "../../index.css";
 
 export function DailyTasks({details}){

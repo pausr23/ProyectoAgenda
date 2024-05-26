@@ -6,7 +6,7 @@ import { SideBarMobile } from "../activity/SideBarMobile.jsx";
 
 import "../../index.css";
 
-export function Sidebar() {
+export function SideBar() {
 
     return (
 

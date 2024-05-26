@@ -1,4 +1,4 @@
-import { CoursesPorcentage } from "./CoursePorcentage";
+import { CoursesPorcentage } from "../ui/CoursePorcentage";
 
 import "../../index.css";
 

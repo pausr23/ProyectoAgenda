@@ -11,34 +11,27 @@ import { Signup } from "./components/routes/Signup.jsx";
 
 import { Profile } from "./components/routes/Profile.jsx";
 
-
 import './index.css';
 
 export function App() {
  
   return (
-  <div >
+          <div >
+              <Routes>
+                    <Route path="/*" element={<Navigate to="/" />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/admin" element={<Admin />} />
+                    <Route path="/activities" element={<Activities />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/questions" element={<Questions />} />
 
-    <Routes>
-      <Route path="/*" element={<Navigate to="/" />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/admin" element={<Admin />} />
-      <Route path="/activities" element={<Activities />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/questions" element={<Questions />} />
-
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/profile" element={<Profile />} />
-    </Routes>
-
-  
-  </div>
-
-  
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/profile" element={<Profile />} />
+              </Routes>
+          </div>
   );
-
 }
 
 export default App

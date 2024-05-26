@@ -1,4 +1,4 @@
-import { MyCourses } from "./MyCourses";
+import { MyCourses } from "../activity/MyCourses";
 
 import "../../index.css";
 

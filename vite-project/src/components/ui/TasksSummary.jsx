@@ -1,5 +1,5 @@
-import { WeeklyTasks } from "./WeeklyTasks";
-import { DailyTasks } from "./DailyTasks";
+import { WeeklyTasks } from "../activity/WeeklyTasks.jsx";
+import { DailyTasks } from "../activity/DailyTasks.jsx";
 
 import "../../index.css";
 
