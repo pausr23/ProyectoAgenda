@@ -1,8 +1,14 @@
-import { MobileInputField } from "../ui/MobileInputField.jsx";
+import { MobileInputField } from "./MobileInputField.jsx";
 
 import "../../index.css";
 
+/**
+ * Renders a mobile view for setting up health details.
+ *
+ * @return {JSX.Element} The JSX element representing the mobile view.
+ */
 export function QuestionsMobile(){
+    
     return(
             <div className="xl:hidden">
                 <div className="flex justify-center items-center h-screen">

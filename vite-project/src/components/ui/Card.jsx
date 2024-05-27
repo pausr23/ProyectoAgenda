@@ -2,6 +2,16 @@ import PropTypes from 'prop-types'
 
 import "../../index.css";
 
+/**
+ * Renders a card component with the given course, task description, days left, and text color.
+ *
+ * @param {Object} props - The properties object.
+ * @param {string} props.course - The name of the course.
+ * @param {string} props.taskDescription - The description of the task.
+ * @param {string} props.daysLeft - The number of days left for the task.
+ * @param {string} props.textColor - The color of the text.
+ * @return {JSX.Element} - The rendered card component.
+ */
 export function Card({course, taskDescription, daysLeft, textColor}){
 
     return(
@@ -13,6 +23,7 @@ export function Card({course, taskDescription, daysLeft, textColor}){
     )  
 }
 
+//set default values for props
 Card.propTypes = {
     course: PropTypes.string.isRequired,
     taskDescription: PropTypes.string.isRequired,

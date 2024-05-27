@@ -1,10 +1,15 @@
 import { SelectAdd } from "./SelectAdd";
+
 import "../../index.css";
 
+/**
+ * Renders a form for adding a new item with a name and description fields.
+ *
+ * @return {JSX.Element} The rendered form.
+ */
 export function FirstAdd(){
 
     return(
-
             <div className="ml-10">
                 <div className="grid grid-cols-1">
                     <label className="text-2xl font-bold mb-3">Name</label>
@@ -18,6 +23,5 @@ export function FirstAdd(){
                     <textarea className="bg-sky-100 w-80" name="Description" id="" cols="30" rows="5"></textarea>
                 </div>
             </div>
-
     )
 }

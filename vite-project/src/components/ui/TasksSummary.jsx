@@ -3,6 +3,11 @@ import { DailyTasks } from "../activity/DailyTasks.jsx";
 
 import "../../index.css";
 
+/**
+ * Renders a component that displays the summary of tasks.
+ *
+ * @return {JSX.Element} The rendered component.
+ */
 export function TasksSummary(){
 
     const weekly = [
@@ -20,13 +25,13 @@ export function TasksSummary(){
     ]
 
     return(
-
             <section class="mx-auto w-[74%] md:w-[80%] xl:min-w-full col-span-2 h-fit">              
                 <div class=" md:grid-cols-2 grid p-4 text-gray-950"> 
+
                     <WeeklyTasks details={weekly}/>
                     <DailyTasks details={daily}/> 
+                    
                 </div>
             </section>
-
     )
 }

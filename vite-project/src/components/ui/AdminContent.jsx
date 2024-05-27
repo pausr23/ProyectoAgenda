@@ -1,8 +1,12 @@
 import { MyButtons } from "../activity/MyButtons";
 
-
 import "../../index.css";
 
+/**
+ * Renders the admin content component.
+ *
+ * @return {JSX.Element} The JSX element representing the admin content.
+ */
 export function AdminContent(){
 
     const button = [
@@ -12,11 +16,9 @@ export function AdminContent(){
     ]
 
     return(
-
-            <div className="bg-white pt-12 pb-72">
+            <div className="bg-white rounded-2xl pt-12 pb-72">
                 <h1 class="text-4xl font-bold mt-20 mb-16 ml-10">Activities</h1>
                 <MyButtons datas={button}/>
             </div>
-
     )
 }

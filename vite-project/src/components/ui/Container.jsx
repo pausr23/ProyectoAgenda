@@ -4,6 +4,11 @@ import { MyCards } from "../activity/MyCards";
 
 import "../../index.css";
 
+/**
+ * Renders the main container for the application.
+ *
+ * @return {JSX.Element} The main container with categories, options, and cards.
+ */
 export function Container(){
 
     const categories = [
@@ -32,14 +37,11 @@ export function Container(){
 
 
     return(
-
             <div>
                 <MyCategories datas={categories}/>
                 <Options datas={option}/>
                 <MyCards datas={card}/>
-            </div>
-            
-
+            </div> 
     )
 }
 

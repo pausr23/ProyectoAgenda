@@ -1,14 +1,30 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import "../../index.css";
 
+/**
+ * Renders a responsive navigation bar with a toggle button for mobile devices.
+ *
+ * @return {JSX.Element} The rendered navigation bar.
+ */
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+/**
+ * Toggles the state of the menu open/closed.
+ *
+ * @return {void} This function does not return anything.
+ */
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+/**
+ * Closes the menu by setting the state of `isMenuOpen` to `false`.
+ *
+ * @return {void} This function does not return anything.
+ */
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -46,5 +62,5 @@ export function Navbar() {
               </div>
             )}
           </div>
-  );
+  )
 }

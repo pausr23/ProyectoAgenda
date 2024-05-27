@@ -3,10 +3,15 @@ import { InputField } from "../ui/InputField.jsx";
 
 import "../../index.css";
 
+/**
+ * Renders a mobile login form with a logo, a heading, a form for user and password input,
+ * a submit button, a link to reset password, and a link to create an account.
+ *
+ * @return {JSX.Element} The mobile login form as a JSX element.
+ */
 export function LoginMobile() {
 
     return(
-
             <div className="xl:hidden grid items-center h-screen">
                 <div className="px-10">
                     <Link to="/">
@@ -31,16 +36,14 @@ export function LoginMobile() {
                     >Log in
                     </button>
                         <div className="flex justify-end mt-3 mb-4 font-semibold">
-                            <a href="#" className="text-[#928F8F]">
-                            Forgot password
-                            </a>
+                            <a href="#" className="text-[#928F8F]">Forgot password</a>
                         </div>
                         <p className="text-lg text-[#928F8F] font-semibold mt-10">Don't have an account?
                             <Link to="/signup" className="text-lg text-[#7193E3] font-semibold ml-2">Create one</Link>
                         </p>
-                        </form>
-                    </div>
-                    </div>
+                    </form>
                 </div>
+                </div>
+            </div>
     )
 }

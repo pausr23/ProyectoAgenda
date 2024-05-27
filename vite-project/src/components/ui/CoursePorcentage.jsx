@@ -2,10 +2,17 @@ import PropTypes from 'prop-types'
 
 import "../../index.css";
 
+/**
+ * Renders a component that displays the progress of a course.
+ *
+ * @param {Object} props - The properties object.
+ * @param {string} props.name - The name of the course.
+ * @param {string} props.progress - The progress of the course.
+ * @return {JSX.Element} The rendered component.
+ */
 export function CoursesPorcentage({name, progress}){
 
     return(
-
             <div className="md:text-center mb-3 md:mx-8">
                 <div className="grid md:grid-cols-2 ml-8 md:ml-0 font-semibold" >
                     <h2 className="text-black text-base text-start">{name}</h2>
@@ -15,19 +22,17 @@ export function CoursesPorcentage({name, progress}){
                     <div className="h-full bg-orange-500 rounded-full w-[60%]"></div>
                 </div>
             </div>
-
     )
 }
 
+//set default values for props
 CoursesPorcentage.propTypes = {
     name: PropTypes.string.isRequired,
-    progress: PropTypes.string.isRequired,
+    progress: PropTypes.string.isRequired
 }
 
 //set default values for props
 CoursesPorcentage.defaultProps = {
     name: 'Courses Porcentage name',
-    progress: 'Courses Porcentage progress',
+    progress: 'Courses Porcentage progress'
 }
-
-

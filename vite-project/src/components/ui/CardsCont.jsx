@@ -1,6 +1,12 @@
-import "../../index.css";
 import { MyLabels } from "../activity/MyLabels";
 
+import "../../index.css";
+
+/**
+ * Renders the CardsCont component which displays a list of labels with their corresponding icons and labels.
+ *
+ * @return {JSX.Element} The CardsCont component with a div containing a MyLabels component.
+ */
 export function CardsCont(){
 
     const labels = [
@@ -9,14 +15,10 @@ export function CardsCont(){
         { "id":3, "icon":"https://img.icons8.com/ios-filled/50/FD7E14/filled-circle.png", "label":"Active" },
     ]
 
-
     return(
-
             <div>
                 <MyLabels datas={labels}/>
-            </div>
-            
-
+            </div> 
     )
 }
 
